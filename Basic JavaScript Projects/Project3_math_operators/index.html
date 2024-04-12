@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>MATH OPERATORS ASSIGNMENT</title>
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <h1>Please hover over each to reveal the answers</h1><!--Just explaining how it works-->
+        
+        <!-- Math operators assignment -->
+        <p id="Math" onmouseover="addTwo()">What is 1 times 1?</p> <!--answer appears upon hovering over paragraph text; calls function-->
+        <br><br> <!--spacing added for readability-->
+        
+        <!-- Subtraction assignment -->
+        <p id="subtract" onmouseover="subtractTwo()">What is 10 minus 5?</p> <!--answer appears upon hovering over paragraph text; calls function-->
+        
+        <!-- MULTIPLICATION AND DIVISION ASSIGNMENT -->
+        <p id="multiplyExpression" onmouseover="multiplyTwo()">What is 10 times 10?</p> <!--answer appears upon hovering over paragraph text; calls function-->
+        <br><br> <!--spacing added for readability-->
+        <!-- Division part of the assignment -->
+        <p id="divisionExpression" onmouseover="divideTwo()">What is 10 divided by 5?</p> <!--answer appears upon hovering over paragraph text; calls function-->
+
+        <!-- MULTIPLE OPERATORS ASSIGNMENT -->
+        <br><br> <!--spacing added for readability-->
+        <!-- The span below calls function upon hovering over mouse to display the answer -->
+        <span id="multipleMathOps" onmouseover="multipleOps()">Lets do mutliple arithmetic operations: 1 plus 11, divided by 2, subtract 3 then multiple by 4</span>
+
+        <!-- MODULUS OPERATOR ASSIGNMENT -->
+        <br><br> <!--spacing added for readability-->
+        <span id="modOp" onmouseover="modTwo()">5 divided by 2 is 2 with a remainder of what?</span><!--calls f() to replace/display element with remainder-->
+
+        <!-- NEGATION OPERATOR ASSIGNMENT -->
+        <br><br> <!--spacing added for readability-->
+        <span id="negOp" onmouseover="negTwo()">Negative of the number 5 is...</span><!--calls f() to display negative number upon hover-->
+
+        <!-- INCREMENT AND DECREMENT ASSIGNMENT -->
+        <br><br> <!--spacing added for readability-->
+        <!--calls f() to replace/display element with increased number result-->
+        <span id="incrNum" onmouseover="incrementNum()">Add one more to 99</span>
+        <!-- DECREMENT ASSIGNMENT part -->
+        <br><br> <!--spacing added for readability-->
+        <!--calls f() to replace/display element with decreased number result-->
+        <span id="decNum" onmouseover="decNum()">Decrease 1 by 1</span>
+
+        <!-- MATH.RANDOM ASSIGNMENT -->
+        <br><br> <!--spacing added for readability-->
+        <!--calls f() to replace/display element with random number-->
+        <span id="randNum" onmouseover="randNum()">Display a random number between 1 - 100</span>
+
+        <!-- MATH OBJECT CHALLENGE -->
+        <br><br> <!--spacing added for readability-->
+        <!--calls f() to replace/display element with a number rounded to the nearest integer-->
+        <span id="roundNear" onmouseover="roundNear()">
+            Round 4.6124 to the nearest integer.
+        </span>
+    </body>
+</html>
