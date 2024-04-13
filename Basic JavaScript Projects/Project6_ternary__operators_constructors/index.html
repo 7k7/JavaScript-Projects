@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>PROJECT6_TERNARY__OPERATORS_CONSTRUCTORS ASSIGNMENT</title>
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <!-- PROJECT6_TERNARY__OPERATORS_CONSTRUCTORS ASSIGNMENT -->
+        <p>Riders must be at least 52 centimeters tall to ride.</p>
+        <input id="Height" value="52">
+        <button onclick="Ride_Function()">Click here</button>
+        <p id="Ride"></p>
+
+        <!-- TERNARY OPERATORS CHALLENGE -->
+        <!-- This simple program determines whether a person is elibigle to vote -->
+        <h1>Age Eligibility to vote</h1>
+        <p>In order to vote, you must be 18 or older.</p>
+        <!-- User is asked to type/input age -->
+        <p>Please enter your age in numeric form here: </p>
+        <input id="age">
+        <!-- submit input to check eligibility; makes f() call -->
+        <button onclick="checkAgeToVote()">
+            Click to submit
+        </button>
+        <br>
+        <!-- Result from f() will be displayed here in place of this span element -->
+        <span id="ageCheckResult"></span>
+
+        <!-- CODING ASSIGNMENT PG 133 -->
+        <button onclick="myFunction()">Click Here.</button>
+        <p id="Keywords_and_Constructors"></p>
+
+        <!-- NEW KEYWORD ASSIGNMENT -->
+        <br><br><!--spacing-->
+        <!-- Users enter basic data to create a Student profile of themselves -->
+        <h1>Create your Student profile:</h1>
+        <p>Please enter all required information below:</p>
+        <br>
+        <!-- Each input field is id'd to later accessed by f() call to instantiate a Student object -->
+        <input id="fullName" placeholder="Your full name">
+        <br> 
+        <input id="ageStudent" placeholder="Your age">
+        <br>
+        <input id="gradeLevel" placeholder="Your grade level">
+        <br>
+        <!-- f() call on click of this button which creates a Student profile based on the above input data -->
+        <button onclick="createStudent()">Click here</button>
+        <!-- f() returns data of the saved Student profile here by replacing the element-->
+        <p id="New_and_This"></p>
+
+        <!-- NESTED FUNCTIONS ASSIGNMENT -->
+        <br><br><!--spacing-->
+        <!-- Calls f() to display a full name upon mouse clicking paragraph -->
+        <p id="Nested_Function" onclick="firstName()">
+            Click here to generate a full name.
+        </p>
+    </body>
+</html>
