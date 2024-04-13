@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CONCAT() METHOD ASSIGNMENT</title>
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <!-- CONCAT() METHOD ASSIGNMENT -->
+        <h1>CONCAT() METHOD ASSIGNMENT</h1>
+        <!-- f() call to display concatenated strings -->
+        <p id="concatPhrase" onmouseover="concatGreet()">
+            Hover over to concatentate these two words: <br>
+            Hello,  <br>
+            World!
+        </p>
+
+        <!-- SLICE() METHOD ASSIGNMENT -->
+        <h1>SLICE() METHOD ASSIGNMENT</h1>
+        <!-- f() call to display a section of a string demoing slice() -->
+        <p id="sliceStr" onmouseover="sliceStrDemo()">
+            Hover over to slice up this phrase: <br>
+            Lets slice this pizza!
+        </p>
+
+        <!-- MORE METHODS CHALLENGE -->
+        <h1>MORE METHODS CHALLENGE</h1>
+        <h2>toUpperCase() method DEMO</h2>
+        <!-- f() call returns paragraph text in all caps upon hover; demoing the .toUpperCase() -->
+        <p id="convertUpper" onmouseover="convertUpperCase()">
+            Hover over to convert this text in all caps.
+        </p>
+
+        <!-- 2nd part of assignment: demo search() -->
+        <h2>search() method DEMO</h2>
+        <!-- f() call returns the position/index of the first occurence of a string within this phrase -->
+        <p onmouseover="strSearch()">
+            Hover over to search this text for the first occurrence of 'program'
+        </p>
+        <p id="strToSearch">The position of the first occurrence of program is: </p>
+        <p id="firstOccur"></p>
+
+        <!-- NUMBER METHODS ASSIGNMENT -->
+        <h1>NUMBER METHODS ASSIGNMENT</h1>
+        <!-- f() call returns number as a string upon hover; demoing toString() -->
+        <p onmouseover="convertNumToStr()">
+            Hover over to convert number 10 into as a string: 
+        </p>
+        <p id="numToStr"></p>
+
+        <!-- TOPRECISION() METHOD ASSIGNMENT -->
+        <h1>TOPRECISION() METHOD ASSIGNMENT</h1>
+         <!-- f() call returns string as a number of a specified length -->
+         <p onmouseover="preciseNum()">
+            Hover over to show 10.23690538 with no demical and a string: 
+        </p>
+        <p id="numNoDecimal"></p>
+
+        <!-- NEW METHODS CHALLENGE -->
+        <h1>NEW METHODS CHALLENGE</h1>
+        <h2>toFixed() method demo</h2>
+        <!-- f() call returns string, rounded to a whole number from a number type -->
+        <p onmouseover="fixNum()">
+            Hover over to show 10.23690538 <br>
+            rounded to nearest whole number and as a string <br>
+            and also rounded to two decimal places (as string as well): 
+        </p>
+        <p id="convNumToStrAndRound"></p>
+
+        <!-- part 2: valueOf() method demo -->
+        <h2>valueOf() method demo</h2>
+        <!-- f() call returns value/content of a string -->
+        <p onmouseover="strValue()">
+            Hover over to return the value of a word you input here:
+        </p>
+        <br>
+        <!-- User input here; a word etc -->
+        <input id="userStrInput">
+        <p id="strValue"></p>
+    </body>
+</html>
