@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LOCAL AND GLOBAL VARIABLE ASSIGNMENT</title>
+        <script src="JS/main.js"></script>
+    </head>
+    <body>
+        <!-- NESTED FUNCTIONS ASSIGNMENT -->
+        <p onclick="randNum()">
+            Click here to generate a random number.
+        </p>
+
+        <!-- METHOD ASSIGNMENT -->
+        <br><br><!--for spacing-->
+        <!-- call f() that checks if business is open and returns message upon clicking -->
+        <p id="isOpen" onclick="isBusniessOpen()">
+            Click here to check if business is currently open.
+        </p>
+
+        <!-- ELSE ASSIGNMENT -->
+        <!-- basic program that takes in only two answers: true or false -->
+        <!-- returns a message from a f() call -->
+        <h1>Are you 18 or older to vote?</h1>
+        <p>Please type in: true or false:</p>
+        <input id="ageInput"><!--input to pass to f()-->
+        <br><!--spacing-->
+        <p id="response">_________</p>
+        <br><br><!--spacing-->
+        <!-- click button to call f() that checks answer -->
+        <button onclick="verifyAge()">SUBMIT</button>
+
+        <!-- ELSE IF ASSIGNMENT -->
+        <!-- checks your current hour to see what time of day is it currently for you -->
+        <br><br><!--spacing-->
+        <!-- message returned and displayed by f() here -->
+        <p id="Time_of_day"></p>
+        <br>
+        <!-- f() call unpon clicking button -->
+        <button onclick="Time_function()">Click here to get the time.</button>
+    </body>
+</html>
