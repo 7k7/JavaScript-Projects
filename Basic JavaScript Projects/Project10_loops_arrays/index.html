@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>LOOPS ASSIGNMENT</title>
+        <link rel="stylesheet" type="text/css" href="CSS/main.css">
+        <script src="JS/main.js" defer></script>
+    </head>
+    <body>
+        <h1>LOOPS ASSIGNMENT</h1>
+        <p id="Loop"></p>
+        <button onclick="Call_Loop()">Click here to execute the loop.</button>
+
+        <h2>LENGTH PROPERTY CHALLENGE</h2>
+        <!-- f() call returns length of string from user input -->
+        <input id="userInput">
+        <br>
+        <button onclick="strLength()">Click to see the length of your phrase/word.</button>
+        <br>
+        <p id="lengthVal">The length is.</p>
+
+        <h2>FOR LOOP ASSIGNMENT</h2>
+        <!-- f() call returns each instrument from a given list in a new line break each -->
+        <p id="List_of_Instruments"></p>
+        <button onclick="for_Loop()">Click here to display list of instruments.</button>
+
+        <h2>DOCUMENT.GETELEMENTBYID().INNERHTML ASSIGNMENT</h2>
+        <!-- f() call returns all values of a given array -->
+        <p id="Array"></p>
+        <button onclick="array_Function()">Click here.</button>
+
+        <h2>CONST KEYWORD ASSIGNMENT</h2>
+        <!-- f() call returns a values of a constant object -->
+        <p id="Constant"></p>
+        <button onclick="constant_function()">Click here!</button>
+        
+        <h2>LET KEYWORD ASSIGNMENT</h2>
+         <!-- f() call returns a values a let and var variables -->
+         <p id="Var"></p>
+         <p id="Let"></p>
+         <button onclick="demoLet()">Click here!</button>
+
+         <h2>RETURN STATEMENT CHALLENGE</h2>
+         <!-- f() call returns a greeting with the name of the user -->
+         <input type="text" placeholder="Enter your name" id="fullName">
+         <button onclick="demoReturn()">Submit</button>
+         <p id="greetingWithName"></p>
+
+         <h2>OBJECT ASSIGNMENT</h2>
+         <!-- f() call returns a profile info of a user input -->
+         <input type="text" placeholder="full name" id="yourName"> <br>
+         <input type="text" placeholder="age" id="yourAge"> <br>
+         <input type="text" placeholder="country of birth" id="yourBirthCountry"> <br>
+         <input type="text" placeholder="your employee id" id="idNum"> <br>
+         <button onclick="myProfileInfo()">Submit</button>
+         <p id="myProfile"></p>
+
+         <h2>BREAK AND CONTINUE CHALLENGE</h2>
+         <!-- f() call returns a series of words by filtering "white" to demo "break" and "continue" statements -->
+         <p>"black", "white", "black", "black",
+            "white", "black", "black", "black", "black",
+            "black", "black", "black", "black", "white",
+            "white", "white", "white", "white", "white"</p>
+         <button onclick="demoContinueBreak()">Click here to filter out all white text.</button>
+         <p id="skipWhite"></p>
+         <p id="stopAtWhite"></p>
+    </body>
+</html>
