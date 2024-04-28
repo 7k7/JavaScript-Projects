@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>DATA ATTRIBUTE ASSIGNMENT</title>
+        <link rel="stylesheet" type="text/css" href="CSS/CSS_1.css">
+        <script src="JavaScript/JavaScript_3.js" defer></script>
+    </head>
+    <body>
+        <h1>Moon phases</h1>
+        <h3>Click on any to reveal their moon phase name:</h3>
+        <!-- upon clicking on each item, f() call returns a alert pop up with the moon phase reveal -->
+        <ul>
+            <li onclick="revealDef(this)" data-moon-phase="New Moon">
+                first/last phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="Waxing Crescent">
+                2nd phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="First Quarter">
+                3rd phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="Waxing Gibbous">
+                4th phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="Full Moon">
+                5th phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="Waning Gibbous">
+                6th phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="Last Quater">
+                7th phase
+            </li>
+            <li onclick="revealDef(this)" data-moon-phase="Waning Crescent">
+                8th phase
+            </li>
+        </ul>
+    </body>
+</html>

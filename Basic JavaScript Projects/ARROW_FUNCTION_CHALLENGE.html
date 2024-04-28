@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ARROW FUNCTION CHALLENGE</title>
+    </head>
+    <body>
+        <p onmouseover="addTwo()">What is 1 + 2? (Hover over to dsiplay answer)</p>
+        <p id="result"></p>
+        <script>
+            // function addTwo() {
+            //     var sum = 1 + 2;
+            //     document.getElementById("result").innerHTML = "The answer is: " + sum;// type coersion. could have used 'toString()' but the string before it makes it unnecessary
+            // }
+
+            // same function as the above just in the 'arrow function shorthand' format
+            var sum = 1 + 2;
+            let addTwo = () => document.getElementById("result").innerHTML = "The answer is: " + sum;
+        </script>
+    </body>
+</html>
