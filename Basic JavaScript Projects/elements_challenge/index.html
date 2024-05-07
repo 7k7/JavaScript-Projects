@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ELEMENTS CHALLENGE</title>
+    </head>
+    <body>
+        <h1>ELEMENTS CHALLENGE:</h1>
+        <script>
+            document.write('What is the URL for this page?')
+        </script>
+        <p id="responseUrl"></p>
+
+        <script type="text/javascript">
+            document.getElementById('responseUrl').innerHTML = document.URL +
+            "<br>" + document.characterSet;
+        </script>
+    </body>
+</html>

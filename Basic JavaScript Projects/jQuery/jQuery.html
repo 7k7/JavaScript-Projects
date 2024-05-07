@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>JQUERY SUBMISSION ASSIGNMENT</title>
+        <!-- jQuery API call -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    </head>
+    <script>
+        // Targets html doc and applies f() after finished loading up the doc
+        $ (document).ready(function() { 
+            $("html").append( // Targets html doc and applies f() after finished loading up the doc
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery TITLE</h1>\
+                            <p id='1'>Click me to show title.</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Click me to hide title</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            // Applies some css like hiding h1 element from the start
+            $("h1").css("display","none");
+            $("#2").css({"color":"red"});
+            // on mouse click events; show title by using the sliding down animation
+            $("#1").click(function() {
+                $("h1").slideDown();
+            });
+            // on mouse click events; hides title by using the sliding up animation
+            $("#3").click(function() {
+                $("h1").slideUp();
+            });
+        });
+    </script>
+</html>
