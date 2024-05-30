@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>XML Challenge</title>
+    </head>
+    <body>
+        <p id="xml_example"></p>
+        <script>
+            var XML_Parser, XML_Document; // declare variables
+
+            // variable contains a string of xml tags and content
+            var laptop = "<laptop>" +
+                "<make>Apple</make>" +
+                "<screenSize>16 inch</screenSize>" +
+                "<processor>M1 Pro</processor>" +
+                "<model>MacBookPro18,2</model>" +
+                "</laptop>";
+            
+            // create an xml dom parser
+            XML_Parser = new DOMParser();
+
+            // creates a new XML DOM object using the text string
+            XML_Document = XML_Parser.parseFromString(laptop, "text/xml");
+
+            document.getElementById('xml_example').innerHTML =
+            XML_Document.getElementsByTagName('make')[0].childNodes[0].nodeValue;
+        </script>
+    </body>
+</html>
